@@ -28,15 +28,16 @@
 				min-height: 100vh;
 			}
 
-			.card {
+			main {
 				padding: 15px;
 				background-color: hsl(0, 0%, 100%);
-				border-radius: 3%;
+				border-radius: 5%;
 				max-width: 300px;
+				box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
 			}
 
 			.qr-code {
-				border-radius: 3%;
+				border-radius: 5%;
 				object-fit: contain;
 				max-width: 100%;
 			}
@@ -50,13 +51,14 @@
 				text-align: center;
 			}
 
-			p {
+			p,
+			h1 {
 				font-family: "Outfit", sans-serif;
 				font-optical-sizing: auto;
 				margin: 10px 0px;
 			}
 
-			.title {
+			h1 {
 				color: hsl(218, 44%, 22%);
 				font-weight: 700;
 				font-size: 22px;
@@ -70,17 +72,17 @@
 		</style>
 	</head>
 	<body>
-		<div class="card">
+		<main>
 			<img class="qr-code" src="images/image-qr-code.png" alt="qr code" />
 			<div class="texts">
-				<p class="title">
+				<h1 class="title">
 					Improve your front-end skills by building projects
-				</p>
+				</h1>
 				<p class="subtitle">
 					Scan the QR code to visit Frontend Mentor and take your
 					coding skills the next level
 				</p>
 			</div>
-		</div>
+		</main>
 	</body>
 </html>
